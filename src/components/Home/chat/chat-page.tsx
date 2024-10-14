@@ -52,7 +52,7 @@ const ChatPage = ({ defaultLayout = [320, 480] }: Layout) => {
           document.cookie = `resize-layout:collapsed=false;`;
         }}
       >
-        <Sidebar />
+        <Sidebar isCollapsed={isCollapsed} />
       </ResizablePanel>
       <ResizableHandle withHandle />
       <ResizablePanel className="" defaultSize={defaultLayout[1]} minSize={30}>
